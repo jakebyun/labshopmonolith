@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/courses/cna-full/2c7ffd60-3a9c-11f0-833f-b38345d437ae/monolith-2-misvc-2022
+www.msaez.io/#/courses/cna-full/2c7ffd60-3a9c-11f0-833f-b38345d437ae/ops-docker
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
@@ -21,6 +21,7 @@ cd /bin
 See the README.md files inside the each microservices directory:
 
 - monolith
+- inventory
 
 
 ## Run API Gateway (Spring Gateway)
@@ -33,6 +34,9 @@ mvn spring-boot:run
 - monolith
 ```
  http :8088/orders id="id"productId="productId"qty="qty"customerId="customerId"amount="amount"
+```
+- inventory
+```
  http :8088/inventories id="id"stock="stock"
 ```
 

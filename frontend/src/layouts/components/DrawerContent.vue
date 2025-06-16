@@ -14,6 +14,7 @@ import {
                 to: '/orders',
             }"
         />
+        <VerticalNavSectionTitle :item="{ heading: 'Inventory' }" />
         <VerticalNavLink
             :item="{
                 title: 'Inventory',
